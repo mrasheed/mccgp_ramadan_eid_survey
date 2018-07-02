@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MCCGP Ramadan and Eid Survey</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="shortcut icon" href="">
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <div class="container text-center text-dark pt-1">
+          <h1 class="display-6">Your Ramadan and Eid Experience at MCCGP</h1>
+        </div>
+        <div class="container text-center text-danger pt-4">
+          <p class="lead">To help us improve your future Ramadan and Eid experience at the MCCGP, we would be grateful if you can take a few minutes to answer the following questions.</p>
+        </div>
+      </div>
+
+      <form id="ramadan-eid-survey" method="POST" action="https://script.google.com/macros/s/AKfycbxmYFhLVH3msx7oQzHnud9NG98DxSyuoEr4yXpxZg/exec">
+
+        <!-- Residence -->
+        <div class="form-group">
+          <h5 class="">1. Where do you reside?</h5>
+          <div id="residence_alert" class="alert alert-warning alert-dismissible fade show" style="display:none" role="alert">
+            Please select your place of residence
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="Locality" id="locality_monroe_murrys" value="Monroeville/Murrysville">
+                Monroeville/Murrysville Area
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="Locality" id="locality_pitt" value="Pittsburgh City">
+                Pittsburgh City Area
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="Locality" id="locality_north" value="North Hills/Cranberry">
+                North Hills/Cranberry Township
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="Locality" id="locality_south_west" value="South Hills/Carnegie/Mount Lebanon/Moon Township">
+                South Hills/Carnegie/Mount Lebanon/Moon Township
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="Locality" id="locality_visitor" value="Visiting Pittsburgh">
+                Visiting Pittsburgh
+              </label>
+            </div>
+          </div></br>
+        </div>
+
+        <!-- Daily Iftar Frequency -->
+        <div class="form-group">
+          <h5 class="">2. How often did you attend the daily iftars at the MCCGP?</h5>
+          <div id="daily_iftar_alert" class="alert alert-warning alert-dismissible fade show" style="display:none" role="alert">
+            Please select your choice
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="Daily_Iftar_Frequency" id="daily_iftar_daily" value="Daily">
+                Daily
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="Daily_Iftar_Frequency" id="daily_iftar_weekends" value="Weekends Only">
+                On weekends Only
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="Daily_Iftar_Frequency" id="daily_iftar_often" value="As Often as Possible">
+                As often as I could
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="Daily_Iftar_Frequency" id="daily_iftar_infrequently" value="Infrequently">
+                Infrequently
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="Daily_Iftar_Frequency" id="daily_iftar_none" value="Not at all">
+                Could not make it at all
+              </label>
+            </div>
+          </div></br>
+        </div>
+
+        <!-- Iftar Preference -->
+        <div class="form-group">
+          <h5 class="">3. Which iftars should MCCGP continue to host at the center?</h5>
+          <div id="iftar_pref_alert" class="alert alert-warning alert-dismissible fade show" style="display:none" role="alert">
+            Please select your choice
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="Iftar_Preference" id="iftar_pref_daily" value="Daily">
+                Daily
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="Iftar_Preference" id="iftar_pref_weekends" value="Weekends Only">
+                Weekends Only
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="Iftar_Preference" id="iftar_pref_both" value="Both">
+                Both
+              </label>
+            </div></br>
+        </div>
+
+        <!-- Support Iftars? -->
+        <div class="form-group">
+          <h5 class="">4. Would you be willing to financially support the iftars?</h5>
+          <div id="support_iftars_alert" class="alert alert-warning alert-dismissible fade show" style="display:none" role="alert">
+            Please select your choice
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="Support_Iftars" id="support_iftars_yes" value="Yes">
+                Yes
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="Support_Iftars" id="support_iftars_no" value="No">
+                No
+              </label>
+            </div></br>
+        </div>
+
+        <!-- Memborable Eid Experience -->
+        <div class="form-group">
+          <h5 class="">5. Did the MCCGP create a memorable Eid experience for you and your family?</h5>
+          <div id="eid_experience_alert" class="alert alert-warning alert-dismissible fade show" style="display:none" role="alert">
+            Please select your choice
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="Memorable_Eid_Experience" id="eid_experience_yes" value="Yes">
+                Yes
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="Memorable_Eid_Experience" id="eid_experience_no" value="No">
+                No
+              </label>
+            </div></br>
+        </div>
+
+        <!-- Rate Eid related Items -->
+        <div class="form-group">
+          <h5 class="">6. How would you rate the following Eid-related items?</h5>
+          <div id="eid_items_alert" class="alert alert-warning alert-dismissible fade show" style="display:none" role="alert">
+            Please provide your answers by choosing one option for each item
+          </div>
+            <table class="table table-hover">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col" style="width: 25%"></th>
+                  <th scope="col" style="width: 12%">Excellent</th>
+                  <th scope="col" style="width: 12%">Good</th>
+                  <th scope="col" style="width: 12%">Average</th>
+                  <th scope="col" style="width: 15%">Below Average</th>
+                  <th scope="col" style="width: 12%">Poor</th>
+                  <th scope="col" style="width: 12%">N/A</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Eid Announcements</td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Eid_Announcements" id="eid_announcements_excel" value="Excellent">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Eid_Announcements" id="eid_announcements_good" value="Good">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Eid_Announcements" id="eid_announcements_avg" value="Average">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Eid_Announcements" id="eid_announcements_below_avg" value="Below Average">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Eid_Announcements" id="eid_announcements_poor" value="Poor">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Eid_Announcements" id="eid_announcements_not_appl" value="N/A">
+                  </td>
+                </tr>
+                <tr>
+                  <td>Parking Arrangements</td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Eid_Parking_Arrangements" id="eid_parking_arrangements_excel" value="Excellent">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Eid_Parking_Arrangements" id="eid_parking_arrangements_good" value="Good">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Eid_Parking_Arrangements" id="eid_parking_arrangements_avg" value="Average">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Eid_Parking_Arrangements" id="eid_parking_arrangements_below_avg" value="Below Average">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Eid_Parking_Arrangements" id="eid_parking_arrangements_poor" value="Poor">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Eid_Parking_Arrangements" id="eid_parking_arrangements_not_appl" value="N/A">
+                  </td>
+                </tr>
+                <tr>
+                  <td>Prayer Arrangements</td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Eid_Prayer_Arrangements" id="eid_prayer_arrangements_excel" value="Excellent">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Eid_Prayer_Arrangements" id="eid_prayer_arrangements_good" value="Good">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Eid_Prayer_Arrangements" id="eid_prayer_arrangements_avg" value="Average">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Eid_Prayer_Arrangements" id="eid_prayer_arrangements_below_avg" value="Below Average">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Eid_Prayer_Arrangements" id="eid_prayer_arrangements_poor" value="Poor">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Eid_Prayer_Arrangements" id="eid_prayer_arrangements_not_appl" value="N/A">
+                  </td>
+                </tr>
+                <tr>
+                  <td>First Eid Khutba</td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="First_Eid_Khutba" id="first_eid_khutba_excel" value="Excellent">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="First_Eid_Khutba" id="first_eid_khutba_good" value="Good">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="First_Eid_Khutba" id="first_eid_khutba_avg" value="Average">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="First_Eid_Khutba" id="first_eid_khutba_below_avg" value="Below Average">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="First_Eid_Khutba" id="first_eid_khutba_poor" value="Poor">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="First_Eid_Khutba" id="first_eid_khutba_not_appl" value="N/A">
+                  </td>
+                </tr>
+                <tr>
+                  <td>Second Eid Khutba</td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Second_Eid_Khutba" id="second_eid_khutba_excel" value="Excellent">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Second_Eid_Khutba" id="second_eid_khutba_good" value="Good">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Second_Eid_Khutba" id="second_eid_khutba_avg" value="Average">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Second_Eid_Khutba" id="second_eid_khutba_below_avg" value="Below Average">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Second_Eid_Khutba" id="second_eid_khutba_poor" value="Poor">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Second_Eid_Khutba" id="second_eid_khutba_not_appl" value="N/A">
+                  </td>
+                </tr>
+                <tr>
+                  <td>Food Vendors</td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Eid_Food_Vendors" id="eid_food_vendors_excel" value="Excellent">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Eid_Food_Vendors" id="eid_food_vendors_good" value="Good">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Eid_Food_Vendors" id="eid_food_vendors_avg" value="Average">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Eid_Food_Vendors" id="eid_food_vendors_below_avg" value="Below Average">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Eid_Food_Vendors" id="eid_food_vendors_poor" value="Poor">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Eid_Food_Vendors" id="eid_food_vendors_not_appl" value="N/A">
+                  </td>
+                </tr>
+                <tr>
+                  <td>Kid’s Activities</td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Eid_Kids_Activities" id="eid_kids_activities_excel" value="Excellent">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Eid_Kids_Activities" id="eid_kids_activities_good" value="Good">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Eid_Kids_Activities" id="eid_kids_activities_avg" value="Average">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Eid_Kids_Activities" id="eid_kids_activities_below_avg" value="Below Average">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Eid_Kids_Activities" id="eid_kids_activities_poor" value="Poor">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Eid_Kids_Activities" id="eid_kids_activities_not_appl" value="N/A">
+                  </td>
+                </tr>
+                <tr>
+                  <td>Signage</td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Eid_Signage" id="eid_signage_excel" value="Excellent">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Eid_Signage" id="eid_signage_good" value="Good">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Eid_Signage" id="eid_signage_avg" value="Average">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Eid_Signage" id="eid_signage_below_avg" value="Below Average">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Eid_Signage" id="eid_signage_poor" value="Poor">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Eid_Signage" id="eid_signage_not_appl" value="N/A">
+                  </td>
+                </tr>
+                <tr>
+                  <td>Cleanliness</td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Eid_Cleanliness" id="eid_cleanliness_excel" value="Excellent">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Eid_Cleanliness" id="eid_cleanliness_good" value="Good">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Eid_Cleanliness" id="eid_cleanliness_avg" value="Average">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Eid_Cleanliness" id="eid_cleanliness_below_avg" value="Below Average">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Eid_Cleanliness" id="eid_cleanliness_poor" value="Poor">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Eid_Cleanliness" id="eid_cleanliness_not_appl" value="N/A">
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div></br>
+        </div>
+
+        <!-- Rate Ramadan related Items -->
+        <div class="form-group">
+          <h5 class="">7. How would you rate the following Ramadan-related items?</h5>
+          <div id="ramadan_items_alert" class="alert alert-warning alert-dismissible fade show" style="display:none" role="alert">
+            Please provide your answers by choosing one option for each item
+          </div>
+            <table class="table table-hover">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col" style="width: 25%"></th>
+                  <th scope="col" style="width: 12%">Excellent</th>
+                  <th scope="col" style="width: 12%">Good</th>
+                  <th scope="col" style="width: 12%">Average</th>
+                  <th scope="col" style="width: 15%">Below Average</th>
+                  <th scope="col" style="width: 12%">Poor</th>
+                  <th scope="col" style="width: 12%">N/A</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Iftar Arrangements</td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Iftar_Arrangements" id="ramadan_iftar_arrangements_excel" value="Excellent">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Iftar_Arrangements" id="ramadan_iftar_arrangements_good" value="Good">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Iftar_Arrangements" id="ramadan_iftar_arrangements_avg" value="Average">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Iftar_Arrangements" id="ramadan_iftar_arrangements_below_avg" value="Below Average">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Iftar_Arrangements" id="ramadan_iftar_arrangements_poor" value="Poor">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Iftar_Arrangements" id="ramadan_iftar_arrangements_not_appl" value="N/A">
+                  </td>
+                </tr>
+                <tr>
+                  <td>Cleanliness</td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Cleanliness" id="ramadan_cleanliness_excel" value="Excellent">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Cleanliness" id="ramadan_cleanliness_good" value="Good">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Cleanliness" id="ramadan_cleanliness_avg" value="Average">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Cleanliness" id="ramadan_cleanliness_below_avg" value="Below Average">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Cleanliness" id="ramadan_cleanliness_poor" value="Poor">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Cleanliness" id="ramadan_cleanliness_not_appl" value="N/A">
+                  </td>
+                </tr>
+                <tr>
+                  <td>Taraweeh</td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Taraweeh" id="ramadan_taraweeh_excel" value="Excellent">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Taraweeh" id="ramadan_taraweeh_good" value="Good">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Taraweeh" id="ramadan_taraweeh_avg" value="Average">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Taraweeh" id="ramadan_taraweeh_below_avg" value="Below Average">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Taraweeh" id="ramadan_taraweeh_poor" value="Poor">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Taraweeh" id="ramadan_taraweeh_not_appl" value="N/A">
+                  </td>
+                </tr>
+                <tr>
+                  <td>Reflections during Taraweeh</td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Taraweeh_Reflection" id="ramadan_taraweeh_reflection_excel" value="Excellent">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Taraweeh_Reflection" id="ramadan_taraweeh_reflection_good" value="Good">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Taraweeh_Reflection" id="ramadan_taraweeh_reflection_avg" value="Average">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Taraweeh_Reflection" id="ramadan_taraweeh_reflection_below_avg" value="Below Average">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Taraweeh_Reflection" id="ramadan_taraweeh_reflection_poor" value="Poor">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Taraweeh_Reflection" id="ramadan_taraweeh_reflection_not_appl" value="N/A">
+                  </td>
+                </tr>
+                <tr>
+                  <td>Reflections from Quran before Isha</td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Quran_Reflection" id="ramadan_quran_reflections_excel" value="Excellent">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Quran_Reflection" id="ramadan_quran_reflections_good" value="Good">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Quran_Reflection" id="ramadan_quran_reflections_avg" value="Average">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Quran_Reflection" id="ramadan_quran_reflections_below_avg" value="Below Average">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Quran_Reflection" id="ramadan_quran_reflections_poor" value="Poor">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Quran_Reflection" id="ramadan_quran_reflections_not_appl" value="N/A">
+                  </td>
+                </tr>
+                <tr>
+                  <td>Fajr Reflections</td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Fajr_Reflection" id="ramadan_fajr_reflection_excel" value="Excellent">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Fajr_Reflection" id="ramadan_fajr_reflection_good" value="Good">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Fajr_Reflection" id="ramadan_fajr_reflection_avg" value="Average">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Fajr_Reflection" id="ramadan_fajr_reflection_below_avg" value="Below Average">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Fajr_Reflection" id="ramadan_fajr_reflection_poor" value="Poor">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Fajr_Reflection" id="ramadan_fajr_reflection_not_appl" value="N/A">
+                  </td>
+                </tr>
+                <tr>
+                  <td>Tahajjud</td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Tahajjud" id="ramadan_tahajjud_excel" value="Excellent">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Tahajjud" id="ramadan_tahajjud_good" value="Good">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Tahajjud" id="ramadan_tahajjud_avg" value="Average">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Tahajjud" id="ramadan_tahajjud_below_avg" value="Below Average">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Tahajjud" id="ramadan_tahajjud_poor" value="Poor">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Tahajjud" id="ramadan_tahajjud_not_appl" value="N/A">
+                  </td>
+                </tr>
+                <tr>
+                  <td>Interfaith Iftar</td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Interfaith" id="ramadan_interfaith_iftar_excel" value="Excellent">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Interfaith" id="ramadan_interfaith_iftar_good" value="Good">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Interfaith" id="ramadan_interfaith_iftar_avg" value="Average">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Interfaith" id="ramadan_interfaith_iftar_below_avg" value="Below Average">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Interfaith" id="ramadan_interfaith_iftar_poor" value="Poor">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Interfaith" id="ramadan_interfaith_iftar_not_appl" value="N/A">
+                  </td>
+                </tr>
+                <tr>
+                  <td>Khatmul-Quran</td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramdan_KhatmulQuran" id="ramadan_khatmul_quran_excel" value="Excellent">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramdan_KhatmulQuran" id="ramadan_khatmul_quran_good" value="Good">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramdan_KhatmulQuran" id="ramadan_khatmul_quran_avg" value="Average">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramdan_KhatmulQuran" id="ramadan_khatmul_quran_below_avg" value="Below Average">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramdan_KhatmulQuran" id="ramadan_khatmul_quran_poor" value="Poor">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramdan_KhatmulQuran" id="ramadan_khatmul_quran_not_appl" value="N/A">
+                  </td>
+                </tr>
+                <tr>
+                  <td>Prayer Hall Ambience (comfort, noise level)</td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Prayer_Hall" id="ramadan_prayer_hall_excel" value="Excellent">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Prayer_Hall" id="ramadan_prayer_hall_good" value="Good">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Prayer_Hall" id="ramadan_prayer_hall_avg" value="Average">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Prayer_Hall" id="ramadan_prayer_hall_below_avg" value="Below Average">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Prayer_Hall" id="ramadan_prayer_hall_poor" value="Poor">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Prayer_Hall" id="ramadan_prayer_hall_not_appl" value="N/A">
+                  </td>
+                </tr>
+                <tr>
+                  <td>Kids Babysitting</td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Babysitting" id="ramadan_babysitting_excel" value="Excellent">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Babysitting" id="ramadan_babysitting_good" value="Good">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Babysitting" id="ramadan_babysitting_avg" value="Average">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Babysitting" id="ramadan_babysitting_below_avg" value="Below Average">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Babysitting" id="ramadan_babysitting_poor" value="Poor">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Babysitting" id="ramadan_babysitting_not_appl" value="N/A">
+                  </td>
+                </tr>
+                <tr>
+                  <td>Timely Announcements</td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Announcements" id="ramadan_announcements_excel" value="Excellent">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Announcements" id="ramadan_announcements_good" value="Good">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Announcements" id="ramadan_announcements_avg" value="Average">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Announcements" id="ramadan_announcements_below_avg" value="Below Average">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Announcements" id="ramadan_announcements_poor" value="Poor">
+                  </td>
+                  <td>
+                    <input class="form-check-input" type="radio" style="align:middle; margin: 0px;" name="Ramadan_Announcements" id="ramadan_announcements_not_appl" value="N/A">
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div></br>
+        </div>
+
+        <!-- Comments -->
+        <div class="form-group">
+          <h5 class="" for="Comment_Future_Ramadan_Eid">8. Please tell us the one thing you would like to see changed in future Ramadans and Eids</h5>
+          <div id="comment_future_ramadan_eid_alert" class="alert alert-warning alert-dismissible fade show" style="display:none" role="alert">
+            This question must be answered
+          </div>
+          <div class="controls">
+            <textarea class="form-control w-50" id="comment_future_ramadan_eid" rows="3" name="Comment_Future_Ramadan_Eid"></textarea>
+          </div></br>
+        </div>
+
+        <!-- Memborable Eid Experience -->
+        <div class="form-group">
+          <h5 class="">9. Are you a member of MCCGP?</h5>
+          <div id="membership_alert" class="alert alert-warning alert-dismissible fade show" style="display:none" role="alert">
+            Please select your choice
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="Member" id="membership_yes" value="Yes">
+                Yes
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="Member" id="membership_no" value="No">
+                No
+              </label>
+            </div></br>
+        </div>
+
+        <!-- Comments -->
+        <div class="form-group">
+          <h5 class="" for="Comment_Future_Ramadan_Eid">10. If you would you like to volunteer at the upcoming Eids, please provide your name, phone and email address where we can reach you.</h5>
+          <div class="controls">
+            <input class="w-50" type="text" id="volunteer_info" name="Volunteer" placeholder="">
+          </div></br>
+        </div>
+
+        <div class="form-group">
+          <!-- Button -->
+          <div id="submit_alert" class="alert alert-danger alert-dismissible fade show" style="display:none" role="alert">
+            Please correct errors above before submitting again
+          </div>
+          <div class="controls">
+            <button id="submit-form" class="btn btn-submit btn-primary">Submit</button>
+          </div></br>
+        </div>
+
+      </form>
+
+    </div> <!-- container -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script data-cfasync="false" type="text/javascript" src="ramadan-eid-survey-form-submission-handler.js"></script>
+    <!-- obtain client's ip address -->
+    <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+
+  </body>
+</html>
